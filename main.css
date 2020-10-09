@@ -56,12 +56,18 @@
             top: 200px;
             transform: rotate(45deg);
         }
-        76% {
+        77% {
             border: 1px dashed #0900bd;
             left: 20px;
             top: 204px;
+            border-radius: 0%;
+            background: transparent;
+            transform: none;
         }
         100% {
+            transform: scale(2);
+            border-radius: 50%;
+            background: radial-gradient(#F76b1c, #fbda61);
             border: 1px dashed red;
             left: 480px;
             top: 480px
