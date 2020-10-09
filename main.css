@@ -1,0 +1,75 @@
+    body {
+        max-width: 600px;
+        margin: auto;
+    }
+    
+    .container {
+        margin-top: 40px;
+        background-image: url("img/css_animation_exercise_4.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.5;
+        width: 600px;
+        height: 600px;
+        position: relative;
+    }
+    
+    .hero {
+        width: 75px;
+        height: 75px;
+        opacity: 0.5;
+        animation-name: hero;
+        animation-delay: 0s;
+        position: relative;
+        animation-duration: 17s;
+        position: absolute;
+        box-sizing: border-box;
+    }
+    
+    @keyframes hero {
+        0% {
+            border: 1px dashed red;
+            left: 20px;
+            top: 20px;
+            transform: none;
+        }
+        29% {
+            border: 1px dashed red;
+            left: 500px;
+            top: 20px;
+        }
+        41% {
+            border: 1px dashed red;
+            left: 500px;
+            top: 200px;
+            transform: none;
+        }
+        44% {
+            border: 1px dashed red;
+            left: 270px;
+            top: 200px;
+            transform: rotate(45deg);
+        }
+        56% {
+            border: 1px dashed red;
+            left: 270px;
+            top: 200px;
+            transform: rotate(45deg);
+        }
+        77% {
+            border: 1px dashed #0900bd;
+            left: 20px;
+            top: 204px;
+            border-radius: 0%;
+            background: transparent;
+            transform: none;
+        }
+        100% {
+            transform: scale(2);
+            border-radius: 50%;
+            background: radial-gradient(#F76b1c, #fbda61);
+            border: 1px dashed red;
+            left: 480px;
+            top: 480px
+        }
+    }
